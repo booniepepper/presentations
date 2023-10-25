@@ -1,17 +1,43 @@
-#!/usr/bin/env dt
+#!/usr/bin/env -S rlwrap dt
 
 # Slides
 
-[
-  [ "dt"
+[ [ "dt"
     "duct tape for your unix pipes"
   ]
-  [ "quick bio"
-    "fun:"
-    "> proglang enthusiast"
+  [ "j.r. \"boonie pepper\" hill"
+    "proglang enthusiast"
+    "carpenter and roofer"
+    "amateur woodworker"
+    "plucky with instruments"
+    "2x girl dad"
+    "spice lover"
+  ]
+  [ "professionally..."
+    "software handyman"
+    "9 years in amazon/aws"
+    "now: openfga polyglot sdks"
+    "past: general contracting, roofing, realty, more"
+    "future: ???"
+  ]
+  [ "what's dt?"
+    "one-liner language"
     ""
-    "work:"
-    "> 9 years in amazon"
+    "TODO: demo prompt"
+  ]
+  [ "primary inspirations"
+    "catlangs: forth, factor, joy, min"
+    "text utils: awk, sed, xargs, jq, shells"
+    "oneliners: ruby, python, perl, raku"
+    "other: tcl, haskell, common lisp, basic"
+  ]
+  [ "dt goals"
+    "aspirations are to be..."
+    "------------------------"
+    "a more-general awk"
+    "a jq/yq/xq for text"
+    "forth/joy/factor for sysadmins"
+    "building block for large ecosystems"
   ]
   [ "TODO"
     "write presentation... lol"
@@ -33,16 +59,17 @@
 
 [ \screen:
   screen deq [title content]:
-  nl nl nl
+  \nl 5 times
   title green centered pl
-  nl nl
+  \nl 2 times
   content norm [centered pl] each
-  [nl] 18 screen len - times
+  [nl] 16 screen len - times
 ] \show-screen def
 
 [ \n:
   slides len \slidelen:
-  [red "ERR: There are only " p slidelen p " slides" pl norm] slidelen n lt? do?
+  [ red "ERR: There are only " p slidelen p " slides" pl norm
+  ] slidelen n lt? do?
   slides rev [pop drop] n 1 - times
   last
 ] \nth-slide def
@@ -59,4 +86,4 @@
 
 # let's gooooooooooooo
 
-0 repl
+restart repl
