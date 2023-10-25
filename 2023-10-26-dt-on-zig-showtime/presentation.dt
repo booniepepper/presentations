@@ -26,6 +26,7 @@
     "TODO: demo prompt"
   ]
   [ "primary inspirations"
+    "red green show: handyman corner"
     "catlangs: forth, factor, joy, min"
     "text utils: awk, sed, xargs, jq, shells"
     "oneliners: ruby, python, perl, raku"
@@ -39,10 +40,38 @@
     "forth/joy/factor for sysadmins"
     "building block for large ecosystems"
   ]
-  [ "TODO"
-    "write presentation... lol"
+  [ "writing dt"
+    "rail (many langs)"
+    "rail (rust)"
+    "dt (rail/rust)"
+    "moved + amazon rto"
+    "dt (zig)"
   ]
-  [ "ayy lmao"
+  [ "writing in zig"
+    "TODO: Something about 0.11, packaging, etc"
+    "TODO: Something about \"just have a pointer\""
+    "TODO: Genuinely pleasant"
+    "TODO: C but better?"
+    "TODO: Assembly DSL?"
+  ]
+  [ "is zig better than rust?"
+    "what is your goal?"
+    "zig is here to stay"
+    "don't discount go, lua, odin, etc"
+  ]
+  [ "what does dt need?"
+    "not contributors"
+    "doc contributors"
+    "users"
+    "power users"
+    "tutorials"
+    "examples"
+    "feedback"
+  ]
+  [ "special thanks"
+    "TODO"
+  ]
+  [ "Keep your stick on the ice"
     "kthxbai"
   ]
 ] \slides:
