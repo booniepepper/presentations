@@ -1,0 +1,62 @@
+#!/usr/bin/env dt
+
+# Slides
+
+[
+  [ "dt"
+    "duct tape for your unix pipes"
+  ]
+  [ "quick bio"
+    "fun:"
+    "> proglang enthusiast"
+    ""
+    "work:"
+    "> 9 years in amazon"
+  ]
+  [ "TODO"
+    "write presentation... lol"
+  ]
+  [ "ayy lmao"
+    "kthxbai"
+  ]
+] \slides:
+
+# Presentation stuff. Assumes classic 80x24 terminal.
+
+[2 /] \halve def
+
+[ \line:
+  80 line len - halve \lpad:
+  line [" " push] lpad times
+  rev "" join
+] \centered def
+
+[ \screen:
+  screen deq [title content]:
+  nl nl nl
+  title green centered pl
+  nl nl
+  content norm [centered pl] each
+  [nl] 18 screen len - times
+] \show-screen def
+
+[ \n:
+  slides len \slidelen:
+  [red "ERR: There are only " p slidelen p " slides" pl norm] slidelen n lt? do?
+  slides rev [pop drop] n 1 - times
+  last
+] \nth-slide def
+
+[ \n:
+  n nth-slide show-screen
+  n
+] \print-slide def
+
+[ quote-all drop 1 print-slide ] \restart def
+[ \nl 23 times ] \clear def
+[ 1 + print-slide ] \next def
+[ 1 - print-slide ] \prev def
+
+# let's gooooooooooooo
+
+0 repl
