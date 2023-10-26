@@ -11,14 +11,13 @@
     "amateur woodworker"
     "plucky with instruments"
     "2x girl dad"
-    "spice lover"
   ]
   [ "professionally..."
     "software handyman"
-    "9 years in amazon/aws"
-    "now: openfga polyglot sdks"
-    "past: general contracting, roofing, realty, more"
-    "future: ???"
+    "2003-2014 gc, roofing, realty, usmc, more"
+    "2014-2023 aws"
+    "2023 auth0 (contract)"
+    "next ???"
   ]
   [ "what's dt?"
     "one-liner language"
@@ -26,11 +25,11 @@
     "TODO: demo prompt"
   ]
   [ "primary inspirations"
-    "red green show: handyman corner"
-    "catlangs: forth, factor, joy, min"
+    " red green: handyman corner            "
+    "  catlangs: forth, factor, joy, min    "
     "text utils: awk, sed, xargs, jq, shells"
-    "oneliners: ruby, python, perl, raku"
-    "other: tcl, haskell, common lisp, basic"
+    " oneliners: ruby, python, perl, raku   "
+    "     other: haskell, tcl, basic, etc   "
   ]
   [ "dt goals"
     "aspirations are to be..."
@@ -68,13 +67,22 @@
     "examples"
     "feedback"
   ]
-  [ "special thanks"
-    "TODO"
+  [ "what's next?"
+    "fleshing out"
+    "standards?"
+    "posix?"
   ]
-  [ "Keep your stick on the ice"
+  [ "special thanks"
+    "chuck moore, leo brodie"
+    "vesta stoudt, red green"
+    "aho, weinberger and kernighan"
+  ]
+  [ "keep your stick on the ice"
     "kthxbai"
   ]
 ] \slides:
+
+
 
 # Presentation stuff. Assumes classic 80x24 terminal.
 
@@ -87,6 +95,9 @@
 ] \centered def
 
 [ \screen:
+  # Intentionally slow line-by-line print for effect. (I also do some
+  # virtualization to make it slower in my presentation.) In your
+  # code, concatenate lines before printing.
   screen deq [title content]:
   \nl 5 times
   title green centered pl
@@ -115,4 +126,5 @@
 
 # let's gooooooooooooo
 
-restart repl
+1 print-slide
+repl
